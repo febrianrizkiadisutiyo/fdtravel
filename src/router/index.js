@@ -1,11 +1,46 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import KelolaMobil from "@/views/KelolaMobil.vue";
+import KelolaSupir from "@/views/KelolaSupir.vue";
+import KelolaJadwal from "@/views/KelolaJadwal.vue";
+import DataMobil from "@/views/DataMobil.vue";
+import DataSupir from "@/views/DataSupir.vue";
+import DataJadwal from "@/views/DataJadwal.vue";
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/kelolamobil',
+    name: 'kelolamobil',
+    component: KelolaMobil
+  },
+  {
+    path: '/kelolasupir',
+    name: 'kelolasupir',
+    component: KelolaSupir
+  },
+  {
+    path: '/kelolajadwal',
+    name: 'kelolajadwal',
+    component: KelolaJadwal
+  },
+  {
+    path: '/datamobil',
+    name: 'datamobil',
+    component: DataMobil
+  },
+  {
+    path: '/datasupir',
+    name: 'datasupir',
+    component: DataSupir
+  },
+  {
+    path: '/datajadwal',
+    name: 'datajadwal',
+    component: DataJadwal
   },
   {
     path: '/about',
